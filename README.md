@@ -1,6 +1,6 @@
 # El Ensueño · Centro Cultural
 
-Sitio estático de una sola página, preparado para GitHub Pages.
+Sitio estático con una página principal y cuatro páginas de procesos históricos, preparado para GitHub Pages.
 
 ## Publicación en GitHub Pages
 
@@ -16,3 +16,14 @@ GitHub publicará el sitio en unos minutos. No requiere instalación, compilaci�
 - Los textos, horarios y enlaces están en `index.html`.
 - Las imágenes del sitio están en `assets/images/`.
 - Los estilos visuales están en `styles.css`.
+
+## Procesos históricos
+
+El menú «Procesos Historicos» enlaza a páginas independientes:
+
+- `veladas-teatrales.html`
+- `talleres-intensivos.html`
+- `residencias.html`
+- `btl.html`
+
+Edita el contenido de cada proceso en su archivo HTML. Todas las páginas comparten `styles.css` y `script.js`. Si cambias la navegación o el pie de página, actualízalos en los cinco archivos HTML.
