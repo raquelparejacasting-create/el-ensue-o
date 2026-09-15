@@ -27,3 +27,22 @@
 .menu-toggle span:not(.sr-only){background:#ffbd1f}
 .dropdown-list{border-color:#ffbd1f}
 .dropdown-list a:hover,.dropdown-list a[aria-current="page"]{background:#ffbd1f;color:#000}
+
+/* Directions and first-visit guide */
+.directions{width:100%;max-width:540px}
+.directions summary{cursor:pointer;list-style:none}
+.directions summary::-webkit-details-marker{display:none}
+.directions>summary{width:fit-content}
+.directions>summary span{transition:transform .2s}
+.directions[open]>summary span{transform:rotate(180deg)}
+.directions-menu{margin-top:14px;padding:18px;border:1px solid #ffffff40}
+.first-visit>summary{display:flex;justify-content:space-between;gap:14px;color:var(--gold);font-weight:700}
+.first-visit>summary::after{content:"+"}
+.first-visit[open]>summary::after{content:"−"}
+.first-visit-content{padding-top:8px}
+.first-visit-content ol{padding-left:22px}
+.first-visit-content li+li{margin-top:10px}
+.first-visit-content a:not(.button),.directions-map-link{color:var(--gold);text-underline-offset:4px}
+.directions-map-link{display:inline-block;margin-top:18px}
+.first-visit-content .button{white-space:normal}
+@media(prefers-reduced-motion:reduce){.directions>summary span{transition:none}}
