@@ -27,9 +27,9 @@
       const badge = document.createElement('p');
       badge.className = 'event-notice ' + (label === 'Hoy' ? 'event-notice-today' : 'event-notice-tomorrow');
       badge.dataset.label = label;
-      const icon = document.createElement('span');
+      const icon = document.createElement('img');
       icon.setAttribute('aria-hidden', 'true');
-      icon.textContent = '⚠';
+      icon.src = 'assets/favicon.png'; icon.alt = ''; icon.width = 36; icon.height = 36;
       badge.append(icon, ' ' + label);
       article.prepend(badge);
     });
