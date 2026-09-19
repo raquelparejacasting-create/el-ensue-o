@@ -23,9 +23,20 @@
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Navegación principal" data-menu>
         <a href="#nosotros">Quiénes somos</a>
+
         <div class="nav-dropdown" data-dropdown>
           <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="historical-nav" data-dropdown-toggle>Procesos Historicos <span aria-hidden="true">⌄</span></button>
           <ul id="historical-nav" class="dropdown-list" hidden>
+<li class="nav-dropdown" data-dropdown>
+  <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="current-processes-nav" data-dropdown-toggle>Procesos actuales <span aria-hidden="true">⌄</span></button>
+  <ul id="current-processes-nav" class="dropdown-list" hidden>
+    <li><a href="sabados-al-teatro.html">Sábados al teatro</a></li>
+    <li><a href="procesos-formativos.html">Procesos formativos</a></li>
+  </ul>
+</li>
+
+            <li><a href="artistas-invitados.html">Artistas invitados</a></li>
+            <li><a href="obras-y-creaciones.html">Obras y creaciones</a></li>
             <li><a href="veladas-teatrales.html">Veladas Teatrales</a></li>
             <li><a href="talleres-intensivos.html">Talleres Intensivos</a></li>
             <li><a href="residencias.html">Residencias</a></li>
@@ -70,29 +81,26 @@
 
       <section id="procesos" class="processes section" aria-labelledby="processes-title">
         <div class="section-heading">
-          <div class="section-label"><span>02</span> Procesos</div>
+          <div class="section-label"><span>02</span> Procesos actuales</div>
           <div>
             <h2 id="processes-title">Lo que sucede en El Ensueño</h2>
             <p>Procesos que se transforman con las personas que llegan, se quedan y vuelven.</p>
           </div>
         </div>
-        <div class="process-grid">
-          <article class="process-card process-card-featured">
-            <img src="assets/images/proceso-01.jpg" alt="Actividad de creación colectiva" loading="lazy" />
-            <div class="card-content"><p class="card-number">01</p><h3>Semilleros</h3><p>Espacios para explorar el cuerpo, la palabra, la imagen y las preguntas que nos mueven.</p></div>
-          </article>
-          <article class="process-card">
-            <img src="assets/images/proceso-02.jpg" alt="Encuentro cultural en El Ensueño" loading="lazy" />
-            <div class="card-content"><p class="card-number">02</p><h3>Cineclub</h3><p>Pantallas, conversaciones y películas para mirar el mundo desde otros lugares.</p></div>
-          </article>
-          <article class="process-card">
-            <img src="assets/images/proceso-03.jpg" alt="Taller artístico en El Ensueño" loading="lazy" />
-            <div class="card-content"><p class="card-number">03</p><h3>Talleres</h3><p>Laboratorios de creación abiertos para aprender haciendo y compartir lo aprendido.</p></div>
-          </article>
-          <article class="process-card process-card-dark">
-            <div class="card-content"><p class="card-number">04</p><h3>Obras y creaciones</h3><p>Escena, música, muestras y experiencias que celebran la imaginación colectiva.</p><span class="star" aria-hidden="true">✦</span></div>
-          </article>
-        </div>
+<div class="process-grid current-process-grid">
+<article id="sabados-al-teatro" class="process-card">
+    <img src="assets/images/retrato-escena.jpg" alt="Sábados al teatro en El Ensueño" loading="lazy" />
+    <div class="card-content"><p class="card-number">01</p>
+      <h3>Sábados al teatro</h3><p>Obras, conciertos y Cine Club para encontrarnos alrededor del arte.</p>
+      <a class="text-link" href="sabados-al-teatro.html">Conoce Sábados al teatro <span aria-hidden="true">↗</span></a>
+    </div></article>
+<article id="procesos-formativos" class="process-card">
+    <img src="assets/images/proceso-01.jpg" alt="Procesos formativos en El Ensueño" loading="lazy" />
+    <div class="card-content"><p class="card-number">02</p>
+      <h3>Procesos formativos</h3><p>Dramaturgia autoficcional con adultos mayores y promoción de la lectura a través de la lúdica.</p>
+      <a class="text-link" href="procesos-formativos.html">Conoce los procesos formativos <span aria-hidden="true">↗</span></a>
+    </div></article>
+</div>
       </section>
 
       <section id="agenda" class="agenda agenda-preview section" aria-labelledby="agenda-title">
