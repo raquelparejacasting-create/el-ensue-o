@@ -1,0 +1,17 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const context = {window:{}};
+vm.runInNewContext(fs.readFileSync('event-notices.js','utf8'),context);
+const {notice} = context.window.EnsuenoEventNotices;
+const check = (event, instant, expected) => assert.equal(notice(event,new Date(instant)),expected);
+check({date:'2026-09-19'},'2026-09-19T04:59:59Z','Mañana');
+check({date:'2026-09-19'},'2026-09-19T05:00:00Z','Hoy');
+check({date:'2026-09-19'},'2026-09-20T04:59:59Z','Hoy');
+check({date:'2026-09-19'},'2026-09-20T05:00:00Z','');
+check({date:'2026-10-01'},'2026-09-30T17:00:00Z','Mañana');
+check({date:'2027-01-01'},'2026-12-31T17:00:00Z','Mañana');
+check({date:'2026-10-01',endDate:'2026-10-31'},'2026-10-15T17:00:00Z','Hoy');
+check({date:'2026-09-22'},'2026-09-19T17:00:00Z','');
+for(const file of ['index.html','programacion.html'])assert.ok(fs.readFileSync(file,'utf8').includes('<script src="event-notices.js"></script>'));
+console.log('Passed 8 date cases: Colombia midnight, month/year boundaries, ongoing and distant events; both pages load notices.');
