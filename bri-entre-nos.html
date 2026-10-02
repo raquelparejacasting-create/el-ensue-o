@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="bri.css" />
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -22,7 +23,10 @@
         <span></span><span></span><span></span><span class="sr-only">Abrir menú</span>
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Navegación principal" data-menu>
-        <div class="nav-dropdown" data-dropdown><button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="about-nav" data-dropdown-toggle>Quiénes somos <span aria-hidden="true">⌄</span></button><ul id="about-nav" class="dropdown-list" hidden><li><a href="index.html#nosotros">Quiénes somos</a></li><li><a href="el-origen.html">¿Sabías qué es El Ensueño?</a></li></ul></div>
+        <div class="nav-dropdown" data-dropdown><button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="about-nav" data-dropdown-toggle>Quiénes somos <span aria-hidden="true">⌄</span></button><ul id="about-nav" class="dropdown-list" hidden><li><a href="index.html#nosotros">Quiénes somos</a></li><li><a href="el-origen.html">Así se construyó...</a></li><li class="nav-dropdown" data-dropdown><button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="allies-nav" data-dropdown-toggle>Aliados <span aria-hidden="true">&#8964;</span></button><ul id="allies-nav" class="dropdown-list" hidden><li><a href="universidad-de-antioquia.html">Universidad de Antioquia</a></li><li><a href="bri-entre-nos.html">Bri Entre-nos</a></li></ul></li></ul></div>
+
+        <a href="programacion.html">Agenda</a>
+        <a href="index.html#visitanos">Acá estamos</a>
 
         <div class="nav-dropdown" data-dropdown>
           <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="historical-nav" data-dropdown-toggle>Procesos Historicos <span aria-hidden="true">⌄</span></button>
@@ -43,21 +47,57 @@
             <li><a href="btl.html">BTL</a></li>
           </ul>
         </div>
-<div class="nav-dropdown" data-dropdown><button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="allies-nav" data-dropdown-toggle>Aliados <span aria-hidden="true">&#8964;</span></button><ul id="allies-nav" class="dropdown-list" hidden><li><a href="universidad-de-antioquia.html">Universidad de Antioquia</a></li><li><a href="bri-entre-nos.html">Bri Entre-nos</a></li></ul></div>
-        <a href="programacion.html">Agenda</a>
-        <a href="index.html#visitanos">Dónde estamos</a>
       </nav>
     </header>
 
-    <main id="contenido" class="history-page section">
-      <p class="eyebrow">Aliados</p>
-      <h1>Bri Entre-nos</h1>
-      <div class="history-status">
-        <h2>Nuestra alianza</h2>
-        <p>Próximamente compartiremos aquí información sobre nuestra alianza con Bri Entre-nos.</p>
-      </div>
-      <a class="text-link" href="index.html">Volver al inicio <span aria-hidden="true">←</span></a>
-    </main>
+    <main id="contenido" class="bri-page">
+<section class="bri-hero" aria-labelledby="bri-title">
+<div class="bri-hero-copy">
+<div class="bri-identity"><img class="bri-logo" src="assets/images/bri-logo.jpeg" alt="Logo de la Biblioteca Rural Itinerante Entre-Nos" width="100" height="100" /><p>BRI Entre-Nos<br />Biblioteca Rural Itinerante<br />Ovejas · Antioquia</p></div>
+<h1 id="bri-title">Los libros también<br /><em>aprenden<br />a caminar.</em></h1>
+<p class="bri-intro">De una casa a un teatro, de una voz a otra. En Ovejas, la lectura encuentra su lugar allí donde alguien se sienta a compartir una historia.</p>
+<a class="bri-link" href="#raices">Abre esta historia <span aria-hidden="true">↓</span></a>
+</div>
+<figure class="bri-hero-photo"><img src="assets/images/bri-entre-libros.jpg" alt="Libros y pendón de la Biblioteca Rural Itinerante Entre-Nos en Ovejas" width="1920" height="1280" fetchpriority="high" /><figcaption>Entre-Nos · Un nombre para volver a encontrarnos.<br />Sembrando lectura en Ovejas desde 2019.</figcaption></figure>
+</section>
+<nav class="bri-index" aria-label="Recorrido por Entre-Nos"><span>Las páginas de esta historia</span><a href="#raices">Las raíces</a><a href="#mariana">Mariana</a><a href="#camino">El camino</a><a href="#encuentros">Los encuentros</a><a href="#album">El álbum</a></nav>
+
+<section id="raices" class="bri-wrap bri-two" aria-labelledby="raices-title">
+<header><p class="eyebrow">01 / Las raíces</p><h2 id="raices-title">Un nombre guardado<br />en la memoria<br /><em>del pueblo.</em></h2><p class="bri-note">Antes de ser biblioteca, Entre-Nos ya era una manera de contarnos.</p></header>
+<div class="bri-prose"><p>El nombre viene del antiguo <strong>Periódico Entre-Nos</strong>, que circuló en Ovejas hasta cerca de 2012. Cuando la biblioteca llegó en 2019, la comunidad recuperó esas palabras: una memoria local que encontraba otra forma de seguir viva.</p><p>La semilla ya estaba sembrada. Mariana y un grupo de amigos organizaban cineforos y pequeñas actividades culturales. Una convocatoria nacional, impulsada por una funcionaria de la alcaldía, hizo posible que Ovejas recibiera una Biblioteca Rural Itinerante.</p><p>Mariana y Juan Castañeda estuvieron a cargo de recibirla. A finales de ese año, un festival de arte y cultura le dio la bienvenida. Su primera casa fue la <strong>Casa Amarilla</strong>: un espacio compartido entre amigos, sueños y libros, donde también hubo goteras, dificultades y aprendizajes.</p><p>Desde entonces, la BRI ha ido encontrando nuevos lugares para leer el mundo en compañía.</p></div>
+</section>
+
+<section id="mariana" class="bri-wrap bri-two bri-mariana" aria-labelledby="mariana-title">
+<figure class="bri-portrait"><img src="assets/images/bri-mariana.jpeg" alt="Mariana Rodríguez, con sombrero y camisa azul, frente a un jardín de flores rosadas" width="1600" height="1066" loading="lazy" /><figcaption>Jessy Mariana Rodríguez Rodríguez<br />Gestora cultural · BRI Entre-Nos</figcaption></figure>
+<div><p class="eyebrow">02 / La voz que acompaña</p><h2 id="mariana-title">Entre letras<br /><em>y cebada.</em></h2><div class="bri-prose"><p class="bri-name">Mariana Rodríguez</p><p>Estudiante de último semestre de Filología Hispánica, gestora cultural y parte del equipo del Centro Cultural El Ensueño. Desde la llegada de la BRI a Ovejas, en 2019, Mariana está al cuidado de esta biblioteca y de los encuentros que crecen a su alrededor.</p><p>También hace cerveza artesanal con su mamá. Entre los libros, la gestión cultural y ese oficio compartido, su historia se escribe en comunidad.</p><p>En 2022, una materia universitaria —Didáctica de la Literatura— la llevó a proponer talleres de lectura con mujeres mayores. Al terminar el año, ellas preguntaron si continuarían. La respuesta tomó la forma de un vínculo que sigue reuniéndolas.</p></div><ul class="bri-tags" aria-label="Oficios e intereses de Mariana"><li>Filología Hispánica</li><li>Gestión cultural</li><li>Lectura en comunidad</li></ul></div>
+</section>
+
+<section id="camino" class="bri-wrap" aria-labelledby="camino-title">
+<header class="bri-timeline-head"><p class="eyebrow">03 / El camino · 2019–2025</p><h2 id="camino-title">Cada año,<br /><em>una página sembrada.</em></h2><p>Una historia hecha de pausas, regresos y nuevas voces. Abre cada año y recorre sus encuentros.</p></header>
+<div class="bri-timeline">
+<details open><summary><span class="bri-year">2019</span><span class="bri-event">Llegan los libros, empieza la fiesta</span></summary><div class="bri-year-copy"><p>Ovejas recibe la Biblioteca Rural Itinerante gracias a una convocatoria nacional. Mariana y Juan Castañeda acompañan su llegada; un festival de arte y cultura celebra la bienvenida. La Casa Amarilla se convierte en su primer hogar.</p></div></details>
+<details><summary><span class="bri-year">2020–2022</span><span class="bri-event">Una pausa entre las páginas</span></summary><div class="bri-year-copy"><p>La biblioteca permanece prácticamente inactiva. Las condiciones de la Casa Amarilla, con humedad y goteras que dañaron algunos ejemplares, también hacen difícil sostener los talleres.</p></div></details>
+<details><summary><span class="bri-year">2022</span><span class="bri-event">La lectura vuelve a reunirnos</span></summary><div class="bri-year-copy"><p>Nacen el logo y el perfil de Facebook de Entre-Nos. En la Casa Amarilla comienzan los encuentros quincenales con mujeres mayores: memoria, cartografía social, origami y cuento colectivo.</p><p>Lo que empieza como un ejercicio universitario se transforma en un proceso que el grupo quiere continuar.</p></div></details>
+<details><summary><span class="bri-year">2023</span><span class="bri-event">Mirar, encuadernar, inventar</span></summary><div class="bri-year-copy"><p>Los cineforos, con aproximadamente una película al mes, abren conversaciones. Los talleres de fanzine y encuadernación invitan a crear con las manos y a darles una forma propia a las historias.</p></div></details>
+<details><summary><span class="bri-year">2024</span><span class="bri-event">Los libros salen; la música llega</span></summary><div class="bri-year-copy"><p>Continúan los cineforos y talleres. La biblioteca participa en las Fiestas de la Leche con una carpa de libros y la hora del cuento, y recibe una colección donada por la Biblioteca Nacional / Ministerio de Cultura.</p><p>Mariana gestiona, a través de la BRI, la cuarta edición del <strong>Festival Oveja Negra</strong>, un encuentro de música metal.</p></div></details>
+<details><summary><span class="bri-year">2025</span><span class="bri-event">Un teatro, un parque, muchas voces</span></summary><div class="bri-year-copy"><p>El grupo de mujeres mayores comienza a reunirse cada martes en El Ensueño. Arranca también la ejecución de un proyecto con el PNUD y la biblioteca amplía sus recorridos:</p><ul><li><strong>En el parque de Ovejas:</strong> talleres infantiles y juveniles entre marzo y mayo, con susurrófono, cadáver exquisito, prensado botánico, grafiti, diccionario juvenil y origami.</li><li><strong>En las escuelas veredales:</strong> visitas a La China, Agricol y La Clarita; La Cuchilla figuraba como visita pendiente.</li><li><strong>En el Festival Fidel Cano, Letras y Libertad:</strong> un periódico colectivo inspirado en el oficio de Fidel Cano.</li><li><strong>Alrededor de la música:</strong> un taller de composición colectiva.</li><li><strong>Por la diversidad y la inclusión:</strong> dos días de conversaciones sobre experiencias LGBTIQ+, cartografía de espacios seguros, collage, poesía diversa y una presentación de las gaiteras Muche Muche, de Bello.</li></ul></div></details>
+</div>
+</section>
+
+<section id="encuentros" class="bri-wrap bri-meet" aria-labelledby="encuentros-title">
+<p class="eyebrow">04 / Lo que florece entre nosotros</p><h2 id="encuentros-title">Hay muchas maneras<br /><em>de abrir un libro.</em></h2><p class="bri-meet-intro">A veces se empieza por una página. Otras, por una planta, una película o un recuerdo que alguien se anima a compartir.</p>
+<div class="bri-cards"><article class="bri-card"><span>01 · Memoria compartida</span><h3>Los martes tienen<br />voz de encuentro.</h3><p>En El Ensueño, las mujeres mayores se reúnen para leer, narrar historias, aprender sobre plantas medicinales y encuadernar sus propias agendas. Ellas mismas se organizan y se turnan el refrigerio y el aseo: también se cuida un lugar haciéndolo propio.</p></article><article class="bri-card"><span>02 · Infancia y territorio</span><h3>La curiosidad<br />sale a caminar.</h3><p>Los talleres itinerantes llegan al parque y a las escuelas veredales. Papel, palabras, hojas y dibujos se vuelven una invitación a explorar. La infancia y las personas mayores están en el centro del enfoque de Mariana.</p></article><article class="bri-card"><span>03 · Creación y diversidad</span><h3>Todas las voces<br />merecen una página.</h3><p>Cineforos, fanzines, música, poesía y conversaciones sobre diversidad amplían las formas de encontrarse. La biblioteca está abierta a cualquier persona de la comunidad que quiera vincularse, proponer o incluso tomarla prestada por un día.</p></article></div>
+</section>
+
+<section id="album" class="bri-wrap" aria-labelledby="album-title"><header class="bri-gallery-head"><div><p class="eyebrow">05 / El álbum</p><h2 id="album-title">Un pequeño refugio<br /><em>para tantos mundos.</em></h2></div><p>Acércate a los rincones de Entre-Nos. Toca una fotografía para verla completa.</p></header><div class="bri-gallery-grid">
+<figure><button type="button" data-bri-photo aria-label="Ampliar fotografía del pendón de Entre-Nos"><img src="assets/images/bri-biblioteca.jpg" alt="Pendón rojo del Programa Nacional de Bibliotecas Itinerantes junto a los libros de Entre-Nos" width="1920" height="1280" loading="lazy" /></button><figcaption>01 / Un nombre que reúne: BRI Entre-Nos.</figcaption></figure>
+<figure><button type="button" data-bri-photo aria-label="Ampliar fotografía de la biblioteca"><img src="assets/images/bri-entre-libros.jpg" alt="Estantería de la biblioteca junto al pendón de Entre-Nos" width="1920" height="1280" loading="lazy" /></button><figcaption>02 / Entre libros, caben muchos caminos.</figcaption></figure>
+<figure><button type="button" data-bri-photo aria-label="Ampliar fotografía de la colección de libros"><img src="assets/images/bri-estanteria.jpg" alt="Colección de libros y revistas en las estanterías de la biblioteca" width="1920" height="1280" loading="lazy" /></button><figcaption>03 / Historias a la espera de otras manos.</figcaption></figure>
+</div></section>
+
+<section class="bri-wrap bri-closing" aria-labelledby="alianza-title"><p class="eyebrow">BRI Entre-Nos + El Ensueño</p><h2 id="alianza-title">La biblioteca pone las historias.<br /><em>El teatro abre la casa.</em></h2><p>Entre-Nos es una iniciativa independiente. El Ensueño ofrece un hogar para los encuentros con las mujeres mayores y acompaña algunas de sus iniciativas, como el Festival de Hip Hop. Mariana enlaza estos caminos con su trabajo cultural.</p><div class="bri-support"><article><h3>Que tus libros encuentren<br /><em>otras manos.</em></h3><p>Un libro que compartes puede abrir un mundo nuevo. Escríbenos para conversar sobre tu donación y coordinar la entrega.</p><a class="button" href="https://wa.me/573196209433?text=Hola%2C%20quiero%20donar%20libros%20a%20la%20BRI%20Entre-Nos.%20%C2%BFQu%C3%A9%20libros%20necesitan%20y%20c%C3%B3mo%20podemos%20coordinar%20la%20entrega%3F" target="_blank" rel="noopener">Donar libros <span aria-hidden="true">↗</span></a></article><article><h3>Hagamos del encuentro<br /><em>una nueva historia.</em></h3><p>Si tienes una idea para un taller, una lectura o un evento con la BRI, conversemos y exploremos cómo hacerla florecer.</p><a class="button" href="https://wa.me/573196209433?text=Hola%2C%20me%20gustar%C3%ADa%20organizar%20un%20evento%20con%20la%20BRI%20Entre-Nos.%20%C2%BFCon%20qui%C3%A9n%20puedo%20conversar%20para%20compartir%20mi%20propuesta%20y%20coordinar%20los%20detalles%3F" target="_blank" rel="noopener">Organizar un evento con la BRI <span aria-hidden="true">↗</span></a></article></div><small>Ambas opciones abren WhatsApp del Centro Cultural El Ensueño para coordinar con la BRI Entre-Nos.</small></section>
+</main>
+<dialog class="bri-lightbox" data-bri-dialog aria-label="Fotografía ampliada de la biblioteca"><button class="bri-lightbox-close" type="button" autofocus>Cerrar ×</button><img alt="" /><p></p></dialog>
 
     <footer class="site-footer">
       <div><p class="footer-title">El Ensueño</p><p>Centro cultural</p></div>
@@ -65,5 +105,6 @@
       <p class="footer-copy">© <span data-year></span> El Ensueño</p>
     </footer>
     <script src="script.js"></script>
+    <script src="bri.js"></script>
   </body>
 </html>
