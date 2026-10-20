@@ -116,19 +116,31 @@ window.ENSUENO_EVENTS = [
     "endTime": null,
     "details": [
       "Artistas locales: Alba Gallán y Juan Bustamante.",
-      "Del 1 al 31 de octubre. Horario por confirmar."
+      "Durante todo octubre, abierta al público únicamente los martes y sábados."
+    ],
+    "openingHours": [
+      {
+        "day": 2,
+        "time": "09:00",
+        "endTime": "14:00"
+      },
+      {
+        "day": 6,
+        "time": "16:00",
+        "endTime": "19:00"
+      }
     ]
   },
   {
     "id": "evento-10-3-14",
     "date": "2026-10-03",
     "endDate": null,
-    "title": "Concierto · Señor Nowak, Dieses y Autor Anónimo",
+    "title": "Concierto Pop + Rap",
     "category": "Sábados al teatro",
     "time": "17:00",
     "endTime": null,
     "details": [
-      "Artistas: Señor Nowak (Medellín), Dieses y Autor Anónimo (departamental)."
+      "Artistas: Señor Nowak, Dieses y Autor Anónimo. Todos invitados de Medellín."
     ]
   },
   {
@@ -147,14 +159,13 @@ window.ENSUENO_EVENTS = [
     "id": "evento-10-10-15",
     "date": "2026-10-10",
     "endDate": null,
-    "title": "Obra nacional · Silvia Narvaez",
+    "title": "Lesa humanidad de un mango",
     "category": "Sábados al teatro",
     "time": "16:00",
     "endTime": null,
     "details": [
       "Artista: Silvia Narvaez (Pasto).",
-      "Título de la obra por confirmar.",
-      "Charla con la artista al finalizar."
+      "Charla al finalizar la obra."
     ]
   },
   {
@@ -224,13 +235,14 @@ window.ENSUENO_EVENTS = [
     "id": "evento-10-31-18",
     "date": "2026-10-31",
     "endDate": null,
-    "title": "Proyección cinematográfica",
+    "title": "Pura Sangre",
     "category": "Sábados al teatro",
     "time": "17:00",
     "endTime": null,
     "details": [
-      "Espectáculos llevados a la pantalla grande.",
-      "Película y director por definir."
+      "Película de Luis Ospina.",
+      "Charla con Raquel Pareja al finalizar la película.",
+      "Chispetas gratis + Ven con tu mejor disfraz."
     ]
   },
   {

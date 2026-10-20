@@ -11,10 +11,10 @@
       return new Date(end) >= now;
     }).sort((a,b) => (a.date + (a.time || '00:00')).localeCompare(b.date + (b.time || '00:00')));
   }
-  const onDay = (event, day) => event.date <= day && (event.endDate || event.date) >= day;
+  const onDay = (event, day) => event.date <= day && (event.endDate || event.date) >= day && (!event.openingHours || event.openingHours.some(slot => slot.day === new Date(day + 'T12:00:00Z').getUTCDay()));
   function card(event, compact = false) {
     const date = dateLabel(event.date) + (event.endDate ? ' – ' + dateLabel(event.endDate) : '');
-    const hours = event.time ? hourLabel(event.time) + (event.endTime ? ' – ' + hourLabel(event.endTime) : '') : 'Horario por confirmar';
+    const hours = event.openingHours ? event.openingHours.map(slot => (slot.day === 2 ? 'Martes' : 'Sábados') + ': ' + hourLabel(slot.time) + ' – ' + hourLabel(slot.endTime)).join('<br />') : event.time ? hourLabel(event.time) + (event.endTime ? ' – ' + hourLabel(event.endTime) : '') : 'Horario por confirmar';
     return '<article class="event-card" ' + (compact ? '' : 'id="' + event.id + '"') + '><p class="event-category">' + escape(event.category) + '</p><p class="event-date"><time datetime="' + event.date + '">' + date + '</time></p><h3>' + escape(event.title) + '</h3><p class="event-time">' + hours + '</p>' + (compact ? '<a class="text-link" href="programacion.html#' + event.id + '">Ver encuentro <span aria-hidden="true">↗</span></a>' : event.details.map((line) => '<p class="event-detail">' + escape(line) + '</p>').join('')) + '</article>';
   }
   window.EnsuenoAgenda = {upcoming, onDay, card};

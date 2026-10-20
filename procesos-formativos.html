@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" /><link rel="stylesheet" href="procesos-formativos.css" />
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -49,30 +49,85 @@
       </nav>
     </header>
 
-    <main id="contenido" class="history-page section">
-    <p class="eyebrow">Procesos actuales</p><h1>Procesos formativos</h1><p class="lead">Espacios de creación y aprendizaje a través del teatro, la palabra y el juego.</p>
-    <div class="process-grid current-process-grid">
-<article id="dramaturgia-autoficcional" class="process-card">
-    <img src="assets/images/proceso-01.jpg" alt="Semillero teatral de dramaturgia autoficcional con adultos mayores en El Ensueño" loading="lazy" />
-    <div class="card-content"><p class="card-number">01</p>
-      <h2>Semillero teatral de dramaturgia autoficcional con adultos mayores</h2><p>Un espacio para explorar las historias propias a través de la escritura y la creación teatral.</p>
-      
-    </div></article>
-<article id="promocion-lectura" class="process-card">
-    <img src="assets/images/proceso-03.jpg" alt="Promoción de la lectura a través de la lúdica en El Ensueño" loading="lazy" />
-    <div class="card-content"><p class="card-number">02</p>
-      <h2>Promoción de la lectura a través de la lúdica</h2><p>Un acercamiento a la lectura desde el juego, la imaginación y el encuentro.</p>
-      
-    </div></article>
-</div>
-    <a class="text-link" href="index.html#procesos">Volver a procesos actuales <span aria-hidden="true">←</span></a>
-  </main>
+    <main id="contenido" class="history-page section formative-page">
+      <header>
+        <p class="eyebrow">Procesos actuales · El Ensueño</p>
+        <h1>Procesos formativos</h1>
+        <p class="lead">Hay historias que despiertan con un gesto y palabras que nos reúnen como una casa. Aquí, el teatro, la lectura y el juego abren un lugar para encontrarnos.</p>
+        <nav class="chapter-nav" aria-label="Explorar procesos formativos">
+          <a href="#dramaturgia-autoficcional">01 · Semillero de Teatro</a>
+          <a href="#promocion-lectura">02 · Lectura y lúdica</a>
+        </nav>
+      </header>
+      <article id="dramaturgia-autoficcional" class="formative-chapter" aria-labelledby="teatro-title">
+        <p class="eyebrow">Capítulo 01 · El cuerpo cuenta</p>
+        <h2 id="teatro-title">Semillero de Teatro</h2>
+        <p class="chapter-subtitle">Dramaturgia autoficcional con adultas y adultos mayores</p>
+        <div class="chapter-prose">
+          <p>En el corregimiento de Ovejas, la memoria encuentra un escenario y el cuerpo, una nueva manera de contar. El Semillero de Teatro del Centro Cultural El Ensueño es un espacio de encuentro y creación para las adultas y los adultos mayores: una casa cálida donde las historias de la vida cotidiana pueden tomar la palabra.</p>
+          <p>A través de la expresión corporal, el juego dramático y la tradición oral, cada encuentro aviva la creatividad e invita a jugar. Un gesto abre una puerta; una voz trae de regreso un camino conocido. Entre risas, escucha y movimiento, vamos tejiendo los lazos que nos hacen comunidad.</p>
+          <p>En cada sesión, el teatro nos acerca a las historias personales y colectivas de nuestro territorio. Los recuerdos, las vivencias y los saberes de Ovejas se vuelven materia de creación: pasan de la conversación al gesto, de la memoria a la escena, hasta encontrar una forma propia de compartir lo vivido.</p>
+          <p>El Ensueño es también un lugar para habitar el presente. Aquí, el cuerpo, la voz y la imaginación se ponen al servicio de la memoria y la cultura local; cada persona trae consigo una historia y, al encontrarse con las demás, abre la posibilidad de escribir un nuevo capítulo.</p>
+        </div>
+        <p class="chapter-verse">La memoria levanta el telón.<br />La vida vuelve a contarse.</p>
+        <section class="process-album" aria-label="Álbum fotográfico">
+          <h3 class="album-heading">Álbum fotográfico <span>Semillero de Teatro</span></h3>
+          <div class="album-content">
+            <p class="album-intro">Pequeñas páginas de nuestra memoria compartida. Cada fotografía, una invitación a imaginar.</p>
+            <!-- Para añadir fotografías, repite una figura con su imagen, texto alternativo y microrelato en figcaption. -->
+            <div class="album-grid">
+              <figure class="album-photo">
+                <a href="assets/images/proceso-01.jpg" aria-label="Ver fotografía del Semillero de Teatro en tamaño completo"><img src="assets/images/proceso-01.jpg" alt="Semillero teatral en El Ensueño" loading="lazy" decoding="async" /></a>
+                <figcaption><p class="eyebrow">Microrelato · 01</p><h3>Una puerta en el aire</h3><p>Bastó un gesto para dibujar una puerta. Alguien la abrió y dejó pasar un recuerdo. Cuando quisieron darse cuenta, la escena tenía el tamaño de un pueblo.</p></figcaption>
+              </figure>
+              <figure class='album-photo'>                <a href='assets/images/_MG_8217.jpg' aria-label='Ver fotografía 02 del Semillero de Teatro en tamaño completo'><img src='assets/images/_MG_8217.jpg' alt='Fotografía 02 del álbum del Semillero de Teatro' loading='lazy' decoding='async' /></a>                <figcaption><p class='eyebrow'>Microrelato · 02</p><h3>Lo que guarda la voz</h3><p>Había guardado aquella historia durante años. Una tarde le prestó su voz y la dejó caminar entre los demás. Cuando volvió a contarla, ya tenía compañía.</p></figcaption>              </figure>              <figure class='album-photo'>                <a href='assets/images/_MG_8272.jpg' aria-label='Ver fotografía 03 del Semillero de Teatro en tamaño completo'><img src='assets/images/_MG_8272.jpg' alt='Fotografía 03 del álbum del Semillero de Teatro' loading='lazy' decoding='async' /></a>                <figcaption><p class='eyebrow'>Microrelato · 03</p><h3>La edad del juego</h3><p>El juego preguntó quién quería empezar. Alguien dio un paso y una risa le salió al encuentro. Por un instante, el tiempo olvidó llevar la cuenta.</p></figcaption>              </figure>              <figure class='album-photo'>                <a href='assets/images/_MG_8244.jpg' aria-label='Ver fotografía 04 del Semillero de Teatro en tamaño completo'><img src='assets/images/_MG_8244.jpg' alt='Fotografía 04 del álbum del Semillero de Teatro' loading='lazy' decoding='async' /></a>                <figcaption><p class='eyebrow'>Microrelato · 04</p><h3>Una casa entre todos</h3><p>Uno trajo una palabra; otra, el recuerdo de un camino. Fueron poniéndolos en medio, con cuidado. Al terminar el encuentro, habían levantado una casa a la que todos podían volver.</p></figcaption>              </figure>
+            </div>
+            <p class="album-hint">Toca una fotografía y descubre su microrelato.</p>
+          </div>
+        </section>
+      </article>
+      <article id="promocion-lectura" class="formative-chapter" aria-labelledby="lectura-title">
+        <p class="eyebrow">Capítulo 02 · La palabra nos reúne</p>
+        <h2 id="lectura-title">Promoción de la lectura a través de la lúdica</h2>
+        <p class="chapter-subtitle">Taller de Literatura · Generación de Oro de Ovejas</p>
+        <div class="chapter-prose">
+          <p>Hay libros que se abren como ventanas y palabras que llegan a sentarse a nuestro lado. El Taller de Literatura del Centro Cultural El Ensueño es un refugio de creación y escucha: un lugar para viajar a través de las palabras, compartir lecturas y darle cauce a la propia voz.</p>
+          <p>Pensado para el grupo de la tercera edad «Generación de Oro» de Ovejas, este espacio celebra la palabra hablada y escrita como un puente. Sobre él caminan la imaginación, la memoria y las preguntas; desde el afecto, aprendemos a mirar lo cotidiano con curiosidad y a fortalecer el pensamiento crítico en conversación con los demás.</p>
+          <p>Las lecturas compartidas, la poesía, los relatos breves y las dinámicas de creación narrativa dan ritmo a cada sesión. El juego invita a probar palabras, a escuchar sus resonancias y a descubrir que una historia puede comenzar en el recuerdo más pequeño.</p>
+          <p>Aquí encuentran eco las vivencias, la tradición oral y los saberes del campo. Las historias locales pasan de una voz a otra, se reconocen y se transforman en un tejido común. En El Ensueño, los libros se habitan, se conversan y se tejen colectivamente: cada encuentro deja una página abierta para quien quiera sumarse.</p>
+        </div>
+        <p class="chapter-verse">Una voz abre el libro.<br />Las demás lo vuelven encuentro.</p>
+        <section class="process-album" aria-label="Álbum fotográfico">
+          <h3 class="album-heading">Álbum fotográfico <span>Lectura y lúdica</span></h3>
+          <div class="album-content">
+            <p class="album-intro">Instantes para leer despacio, donde la imagen y la palabra comparten una misma página.</p>
+            <!-- Para añadir fotografías, repite una figura con su imagen, texto alternativo y microrelato en figcaption. -->
+            <div class="album-grid">
+              <figure class="album-photo">
+                <a href="assets/images/literatura-01.jpg" aria-label="Abrir fotografía y microrelato: La página compartida"><img src="assets/images/literatura-01.jpg" alt="Fotografía 01 del Taller de Literatura de El Ensueño" loading="lazy" decoding="async" /></a>
+                <figcaption><p class="eyebrow">Microrelato · 01</p><h3>La página compartida</h3><p>Una palabra leída en voz alta despertó un recuerdo. El recuerdo llamó a otra voz, y esa voz trajo una historia del campo. Al cerrar el libro, la conversación apenas comenzaba.</p></figcaption>
+              </figure>
+              <figure class="album-photo">
+                <a href="assets/images/literatura-02.jpg" aria-label="Abrir fotografía y microrelato: Una semilla de palabras"><img src="assets/images/literatura-02.jpg" alt="Fotografía 02 del Taller de Literatura de El Ensueño" loading="lazy" decoding="async" /></a>
+                <figcaption><p class="eyebrow">Microrelato · 02</p><h3>Una semilla de palabras</h3><p>Escribió una palabra pequeña, de esas que caben en la palma de la mano. Al compartirla, alguien le acercó un recuerdo y otro le regaló una pregunta. Al final de la tarde, la página había florecido.</p></figcaption>
+              </figure>
+              <figure class="album-photo">
+                <a href="assets/images/literatura-03.jpg" aria-label="Abrir fotografía y microrelato: El cuento que vuelve"><img src="assets/images/literatura-03.jpg" alt="Fotografía 03 del Taller de Literatura de El Ensueño" loading="lazy" decoding="async" /></a>
+                <figcaption><p class="eyebrow">Microrelato · 03</p><h3>El cuento que vuelve</h3><p>Creía haber olvidado aquel cuento que escuchaba de niña. Bastó oír sus primeras palabras para encontrar el camino. Lo contó despacio, y una voz antigua volvió a tener un lugar entre los presentes.</p></figcaption>
+              </figure>
+            </div>
+            <p class="album-hint">Toca una fotografía y descubre su microrelato.</p>
+          </div>
+        </section>
+      </article>
+      <a class="text-link" href="index.html#procesos">Volver a procesos actuales <span aria-hidden="true">←</span></a>
+    </main>
 
     <footer class="site-footer">
       <div><p class="footer-title">El Ensueño</p><p>Centro cultural</p></div>
       <div class="footer-links"><a href="mailto:elensuenocentrocultural@gmail.com">elensuenocentrocultural@gmail.com</a><a href="tel:+573196209433">319 620 9433</a><a href="https://wa.me/573196209433" target="_blank" rel="noopener">Escríbenos por WhatsApp ↗</a></div>
       <p class="footer-copy">© <span data-year></span> El Ensueño</p>
     </footer>
-    <script src="script.js"></script>
+<dialog id="photo-viewer" class="photo-dialog" aria-labelledby="photo-viewer-title" aria-describedby="photo-viewer-story"><div class="photo-dialog-top"><span class="eyebrow">Historias para mirar · <span class="photo-dialog-counter" aria-live="polite"></span></span><button type="button" data-photo-close autofocus>Cerrar ×</button></div><div class="photo-dialog-layout"><img class="photo-dialog-image" alt="" /><div class="photo-dialog-story"><p class="eyebrow">Un instante, un relato</p><h2 id="photo-viewer-title" class="photo-dialog-title"></h2><p id="photo-viewer-story" class="photo-dialog-text"></p><div class="photo-dialog-nav"><button type="button" data-photo-previous>← Anterior</button><button type="button" data-photo-next>Siguiente →</button></div></div></div></dialog><script src="script.js"></script><script src="procesos-formativos.js"></script>
   </body>
 </html>

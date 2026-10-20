@@ -7,8 +7,9 @@
   function notice(event, now = new Date()) {
     const today = dayInColombia(now);
     const tomorrow = new Date(Date.parse(today + 'T12:00:00Z') + 86400000).toISOString().slice(0,10);
-    if (event.date <= today && (event.endDate || event.date) >= today) return 'Hoy';
-    return event.date === tomorrow ? 'Mañana' : '';
+    const isOpen = day => event.date <= day && (event.endDate || event.date) >= day && (!event.openingHours || event.openingHours.some(slot => slot.day === new Date(day + 'T12:00:00Z').getUTCDay()));
+    if (isOpen(today)) return 'Hoy';
+    return isOpen(tomorrow) ? 'Mañana' : '';
   }
   window.EnsuenoEventNotices = {notice, dayInColombia};
   if (typeof document === 'undefined') return;
