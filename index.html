@@ -11,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="inicio.css" />
   </head>
-  <body>
+  <body class="home-page">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <header class="site-header" data-header>
       <a class="header-logo" href="#inicio" aria-label="El Ensueño, inicio">
@@ -55,14 +56,18 @@
           <p class="eyebrow">San Pedro de los Milagros · Antioquia</p>
           <h1 id="hero-title">Un lugar para imaginar, encontrarnos y crear.</h1>
           <p class="hero-intro">El Ensueño es un centro cultural que abre espacio al arte, la memoria y las historias que nacen en comunidad.</p>
-          <a class="button button-dark" href="programacion.html">Conoce la programación <span aria-hidden="true">↓</span></a>
+          <div class="home-hero-actions"><a class="button button-dark" href="programacion.html">Conoce la programación <span aria-hidden="true">↗</span></a><a class="home-read-link" href="#relatos">Quiero leer una historia <span aria-hidden="true">↓</span></a></div><div class="home-topics" aria-label="Explora El Ensueño"><a href="sabados-al-teatro.html">Teatro</a><a href="bri-entre-nos.html">Lectura</a><a href="procesos-formativos.html">Talleres</a><a href="el-origen.html">Nuestra historia</a></div>
         </div>
-        <div class="hero-art" aria-label="Fotografía de una actividad cultural">
-          <img src="assets/images/retrato-escena.jpg" alt="Participante en una actividad artística de El Ensueño" />
-          <div class="sun" aria-hidden="true"></div>
-          <p class="hero-stamp">Centro cultural<br />El Ensueño</p>
+        <div class="home-album" aria-label="Cuatro puertas para descubrir El Ensueño">
+          <p class="album-label"><span aria-hidden="true">✳</span> Un álbum de pequeños encuentros</p>
+          <div class="home-postcards">
+            <a class="home-postcard" href="procesos-formativos.html"><img src="assets/images/inicio-crear-480.jpg" srcset="assets/images/inicio-crear-480.jpg 480w, assets/images/inicio-crear-960.jpg 960w" sizes="(max-width: 760px) 44vw, 23vw" alt="Un adulto y dos niños comparten sus dibujos" width="960" height="640" fetchpriority="high" /><span><small>01 / Crear</small>Todo empieza con un trazo <b aria-hidden="true">↗</b></span></a>
+            <a class="home-postcard" href="el-origen.html"><img src="assets/images/inicio-memoria-480.jpg" srcset="assets/images/inicio-memoria-480.jpg 480w, assets/images/inicio-memoria-960.jpg 960w" sizes="(max-width: 760px) 44vw, 23vw" alt="Un hombre con sombrero y un vaso en las manos, frente a un jardín de flores" width="960" height="640" decoding="async" /><span><small>02 / Recordar</small>Una casa, muchas historias <b aria-hidden="true">↗</b></span></a>
+            <a class="home-postcard" href="sabados-al-teatro.html"><img src="assets/images/inicio-escena-480.jpg" srcset="assets/images/inicio-escena-480.jpg 480w, assets/images/inicio-escena-960.jpg 960w" sizes="(max-width: 760px) 44vw, 23vw" alt="Una artista con sombrero blanco y maquillaje de escena posa entre flores" width="960" height="640" decoding="async" /><span><small>03 / Imaginar</small>La vida entra en escena <b aria-hidden="true">↗</b></span></a>
+            <a class="home-postcard" href="#visitanos"><img src="assets/images/inicio-encuentro-480.jpg" srcset="assets/images/inicio-encuentro-480.jpg 480w, assets/images/inicio-encuentro-960.jpg 960w" sizes="(max-width: 760px) 44vw, 23vw" alt="Un adulto y dos niños junto a un perro, sentados en el césped" width="960" height="640" decoding="async" /><span><small>04 / Encontrarnos</small>También se viene a estar <b aria-hidden="true">↗</b></span></a>
+          </div>
+          <p class="album-footnote">Cada fotografía abre un camino. Elige el tuyo.</p>
         </div>
-        <p class="vertical-note">Hacer del encuentro un escenario</p>
       </section>
 
       <section id="nosotros" class="about section" aria-labelledby="about-title">
@@ -77,6 +82,15 @@
             <img src="assets/favicon.png" alt="" />
             <p>Creemos en el arte como una manera de habitar el territorio con sensibilidad, curiosidad y alegría.</p>
           </div>
+        </div>
+      </section>
+
+      <section id="relatos" class="home-stories" aria-labelledby="home-stories-title">
+        <header class="home-stories-heading"><div><p class="eyebrow">Para leer sin prisa</p><h2 id="home-stories-title">Detrás de cada encuentro,<br /><em>una historia por abrir.</em></h2></div><p>Asómate a nuestros álbumes, sigue el viaje de los libros o descubre cómo nació este lugar.</p></header>
+        <div class="home-story-grid">
+          <a class="home-story" href="procesos-formativos.html#dramaturgia-autoficcional"><img src="assets/images/_MG_8217.jpg" alt="Un instante del Semillero de Teatro" width="960" height="640" loading="lazy" decoding="async" /><div><p class="eyebrow">Fotografías y microrelatos</p><h3>Lo que guarda la voz</h3><p>«Había guardado aquella historia durante años. Una tarde le prestó su voz y la dejó caminar entre los demás».</p><span class="home-story-link">Abrir el álbum <span aria-hidden="true">↗</span></span></div></a>
+          <a class="home-story" href="bri-entre-nos.html#camino"><img src="assets/images/bri-entre-libros.jpg" alt="Libros de la Biblioteca Rural Itinerante Entre-Nos" width="960" height="640" loading="lazy" decoding="async" /><div><p class="eyebrow">Una historia en seis actos</p><h3>Los libros encuentran casa</h3><p>Una biblioteca que viaja, hace pausas y vuelve a reunirnos. En Ovejas, cada voz escribe una página más.</p><span class="home-story-link">Entrar en la historia <span aria-hidden="true">↗</span></span></div></a>
+          <a class="home-story" href="el-origen.html#origen"><img src="assets/images/teatro-montana.jpg" alt="El teatro de El Ensueño entre árboles y montañas" width="960" height="640" loading="lazy" decoding="async" /><div><p class="eyebrow">Así se construyó</p><h3>Un teatro entre montañas</h3><p>Primero fue una juntanza. Después, una puerta abierta. Conoce a las personas y los encuentros que le dieron vida a El Ensueño.</p><span class="home-story-link">Volver al comienzo <span aria-hidden="true">↗</span></span></div></a>
         </div>
       </section>
 
