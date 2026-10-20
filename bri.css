@@ -4,3 +4,5 @@
 @media(prefers-reduced-motion:reduce){.bri-gallery-grid img{transition:none}}
 
 .bri-support{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;max-width:960px;margin:48px auto 0;text-align:left}.bri-support article{display:flex;flex-direction:column;align-items:flex-start;border-top:1px solid #f5efdf60;padding-top:28px}.bri-support h3{margin:0 0 16px;font-size:clamp(27px,3vw,37px)}.bri-support p{margin:0 0 24px}.bri-closing .bri-support .button{margin-top:auto}.bri-support .button{max-width:100%}@media(max-width:650px){.bri-support{grid-template-columns:1fr;gap:36px}}
+
+.bri-act{display:block;margin-bottom:8px;font:600 18px/1.2 var(--display);letter-spacing:.02em}.bri-timeline-head h2 em{color:var(--wine)}
