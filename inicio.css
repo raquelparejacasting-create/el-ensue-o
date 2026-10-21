@@ -12,3 +12,4 @@
 @media(max-width:380px){.home-story{grid-template-columns:1fr}.home-story>img{height:160px;min-height:0}.home-postcard>span{font-size:15px}.home-postcard small{letter-spacing:0}}
 @media(prefers-reduced-motion:reduce){.home-postcard,.home-story{transition:none}.home-postcard:hover,.home-postcard:focus-visible,.home-story:hover{transform:none}}
 .home-read-link,.home-topics a{color:var(--ink)}
+.album-label .album-sheep{display:block;width:36px;height:36px;flex-shrink:0;object-fit:contain;mix-blend-mode:multiply}
