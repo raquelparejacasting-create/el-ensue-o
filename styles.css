@@ -114,3 +114,6 @@
 
 /* Footer brand */
 .footer-logo{display:block;width:210px;max-width:100%;height:63px;overflow:hidden}.footer-logo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 42%;mix-blend-mode:screen}
+
+/* Semester event archives */
+.archive-nav{display:flex;flex-wrap:wrap;gap:12px;margin:32px 0 50px}.archive-nav a{color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:24px;padding:9px 18px}.archive-nav a[aria-current="page"]{background:var(--gold);font-weight:700}.archive-nav a:hover{text-decoration:underline;text-underline-offset:4px}.semester-archive{max-width:850px}.semester-archive h2{font:700 clamp(30px,5vw,48px)/1.1 var(--display);margin:15px 0}.archive-timeline{list-style:none;padding:0;margin:36px 0 0;border-left:2px solid var(--gold)}.archive-event{position:relative;padding:0 0 36px 28px}.archive-event::before{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:var(--gold);left:-7px;top:6px}.archive-event time{font:500 12px/1.5 var(--mono)}.archive-event h3{font:700 clamp(24px,4vw,32px)/1.2 var(--display);margin:10px 0 14px;overflow-wrap:anywhere}.archive-event p{margin:8px 0;max-width:680px}
