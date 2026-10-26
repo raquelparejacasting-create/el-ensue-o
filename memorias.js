@@ -14,6 +14,7 @@
     image.src = link.href;
     image.alt = link.querySelector('img').alt;
     full.href = link.href;
+    story.textContent = link.dataset.story || link.closest('.memory-chapter').querySelector('.memory-story-text')?.textContent || '';
     counter.textContent = (index + 1) + ' / ' + links.length;
     prev.disabled = index === 0;
     next.disabled = index === links.length - 1;
@@ -29,7 +30,6 @@
       links = [...chapter.querySelectorAll('.memory-photo')];
       index = links.indexOf(link);
       heading.textContent = chapter.querySelector('h3').textContent;
-      story.textContent = chapter.querySelector('.memory-story-text').textContent;
       render();
       dialog.showModal();
       document.body.classList.add('memory-viewer-open');
