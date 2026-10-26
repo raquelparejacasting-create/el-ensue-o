@@ -1,0 +1,53 @@
+/* Visual memories of Sábados al teatro */
+.memory-page{--accent:#b7472f;--wash:#f6dfc9;padding:40px clamp(20px,6vw,96px) 90px;background:radial-gradient(ellipse at top right,#f6dfc980,transparent 50%),var(--paper)}
+.memory-page[data-category="conciertos"]{--accent:#765037;--wash:#f5df96}
+.memory-page[data-category="cine-club"]{--accent:#3d6257;--wash:#dce8dc}
+.memory-back{display:inline-block;color:var(--ink);margin-bottom:28px;font-size:14px}
+.memory-hero{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,70px);align-items:center}
+.memory-hero h1{font-size:clamp(58px,8vw,112px);margin:22px 0}
+.memory-hero .lead{max-width:520px}
+.memory-hero figure{position:relative;margin:0}
+.memory-hero img{display:block;width:100%;height:clamp(280px,35vw,440px);object-fit:cover;border-radius:120px 12px 12px 12px}
+.memory-hero figcaption{position:relative;width:fit-content;margin:-25px 16px 0 auto;padding:14px 22px;background:var(--wash);font:italic 22px var(--display);transform:rotate(-3deg)}
+.memory-page .archive-nav{margin:38px 0 0;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.memory-page .archive-nav a[aria-current]{background:var(--ink);color:var(--paper)}
+.memory-intro{display:flex;justify-content:space-between;align-items:end;gap:28px;margin:60px 0 28px}
+.memory-intro h2{font:700 clamp(32px,4vw,52px)/1.1 var(--display);margin:12px 0}
+.memory-intro>p{max-width:350px;font-size:15px}
+.memory-index{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 38px}
+.memory-index a{padding:9px 14px;border:1px solid var(--line);border-radius:6px;color:var(--ink);text-decoration:none;font-size:13px}
+.memory-index a:hover{background:var(--wash)}
+.memory-chapter{scroll-margin-top:100px;margin:0 0 42px;padding:clamp(22px,4vw,50px);border:1px solid var(--line);background:#fffcf5;border-radius:16px}
+.memory-chapter:nth-of-type(even){background:#f5ecdf}
+.memory-chapter header{display:flex;align-items:start;gap:24px;margin-bottom:28px}
+.memory-number{font:italic 52px/1 var(--display);color:var(--accent)}
+.memory-chapter time{font:500 12px var(--mono);text-transform:uppercase}
+.memory-chapter h3{font:700 clamp(28px,4vw,46px)/1.1 var(--display);margin:12px 0 0}
+.memory-chapter .event-credit{font-size:14px;color:#585044;margin:12px 0 0}
+.memory-story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:30px;margin:30px 0 36px;padding:28px 0;border-block:1px dashed #14131035}
+.memory-story h4{font:italic 600 clamp(25px,3vw,36px)/1.25 var(--display);margin:12px 0;color:var(--accent)}
+.memory-story p:last-child{font:19px/1.85 Georgia,serif;margin:0;max-width:750px}
+.memory-album-heading{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 20px}
+.memory-album-heading h4{font:600 24px var(--display);margin:0}
+.memory-album-heading span{font-size:13px}
+.memory-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.memory-photo{display:block;min-width:0;padding:9px;background:#fff;border:1px solid #14131018;box-shadow:0 4px 12px #3223120a;color:var(--ink);text-decoration:none;transition:transform .2s,box-shadow .2s;cursor:zoom-in}
+.memory-photo:nth-child(3n+2){transform:rotate(1deg)}
+.memory-photo:hover,.memory-photo:focus-visible{transform:translateY(-5px);box-shadow:0 10px 20px #32231220}
+.memory-photo img{display:block;width:100%;aspect-ratio:3/2;object-fit:contain;background:#f2eee7}
+.memory-gallery[data-collage] img{aspect-ratio:1;object-fit:contain}
+.memory-photo span{display:flex;justify-content:space-between;padding:12px 3px 4px;font:11px var(--mono)}
+.memory-note{font-size:14px;color:#585044}
+.memory-compact{border-left:5px solid var(--accent)}
+.memory-viewer{width:min(1180px,calc(100% - 24px));max-height:calc(100dvh - 24px);padding:0;border:0;border-radius:14px;background:#171511;color:#fff;overflow:auto}
+.memory-viewer::backdrop{background:#100d0ae8;backdrop-filter:blur(6px)}
+.memory-viewer-top,.memory-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px}
+.memory-viewer h2{font:600 20px var(--display);margin:0}
+.memory-viewer button,.memory-viewer a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;border:1px solid #ffffff55;background:transparent;color:#fff;border-radius:30px;padding:9px 16px;font:500 14px var(--sans);text-decoration:none;cursor:pointer}
+.memory-viewer button:disabled{opacity:.35;cursor:default}
+.memory-viewer img{display:block;width:100%;height:65dvh;object-fit:contain}
+.memory-viewer-story{margin:0;padding:14px 24px 24px;font:17px/1.7 Georgia,serif;color:#dfd5c4;max-width:1000px}
+.memory-controls p{margin:0;font:12px var(--mono)}
+body.memory-viewer-open{overflow:hidden}
+@media(max-width:760px){.memory-hero{grid-template-columns:1fr}.memory-hero img{height:300px}.memory-intro{display:block;margin-top:40px}.memory-story{grid-template-columns:1fr;gap:10px}.memory-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.memory-chapter header{gap:15px}.memory-number{font-size:36px}.memory-album-heading{display:block}.memory-album-heading span{display:block;margin-top:8px}.memory-viewer-top{align-items:start}.memory-controls{flex-wrap:wrap;justify-content:center}.memory-viewer img{height:55dvh}.memory-viewer-top h2{font-size:18px}.memory-photo span{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.memory-photo{transition:none}.memory-photo:hover,.memory-photo:focus-visible{transform:none}}
